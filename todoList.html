@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo</title>
+	<link rel="stylesheet" href="todoList.css?version=1.1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+		crossorigin="anonymous">
+</head>
+<body>
+<div class="centerr">
+	<div class="js-clock">
+		<h1 style="font-size : 60px">00:00</h1>
+	</div>
+
+	<button class="reName" onclick="changeName()">🔄</button>
+	<form class="js-form form">
+		<input type="text" id="askName" class="text-center form-control"
+			placeholder="What is your name?">
+	</form>
+	
+	<h4 class="js-greetings grettings"></h4>
+
+	<form class="js-toDoForm">
+		<input type="text" id="askTodo" class="text-center form-control"
+			placeholder="write a to do" autocomplete="off">
+	</form>
+
+	<ul class="js-toDoList list-group"></ul>
+
+</div>
+
+	<script src="todo.js"></script>
+	<script src="gretting.js"></script>
+	<script src="clock.js"></script>
+	<script src="bg.js"></script>
+</body>
+</html>
